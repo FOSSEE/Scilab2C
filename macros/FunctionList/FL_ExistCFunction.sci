@@ -109,7 +109,7 @@ if (flagexist == %F)
    PrintStringInfo('Converted: ' + strcat(Converted(grep(Converted, ASTFunName)), ' '),ReportFileName,'file','y');
    clear Converted
    load(ToBeConvertedDat,'ToBeConverted');
-   PrintStringInfo('ToBeConverted: ' + ToBeConverted.SCIFunctionName + ' ' + ToBeConverted.CFunctionName,ReportFileName,'file','y');
+   PrintStringInfo('ToBeConverted: ' + typeof(ToBeConverted.SCIFunctionName) + ' ' + typeof(ToBeConverted.CFunctionName),ReportFileName,'file','y');
    clear ToBeConverted   
    // #RNU_RES_E
 end
