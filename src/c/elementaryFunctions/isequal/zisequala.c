@@ -14,6 +14,7 @@
 #include <stdlib.h>
 #include <isreal.h>
 #include "doubleComplex.h"
+#include "isequal.h"
 
 char zisequala(doubleComplex* inp1, int size1r, int size1c, doubleComplex* inp2, int size2r, int size2c)
 {

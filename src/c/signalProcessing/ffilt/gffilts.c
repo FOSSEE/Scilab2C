@@ -18,7 +18,6 @@ void gffilts(char* ft,int size,double N,double fc,double fh,double* oup)
 	int sz=N;
 	double X[sz];
 	double no22=(N-1)/2;
-	int ino22=(int)no22;
 	if(ft[0]=='l')
 	{
 		dfilt_sincs(N,fc,X);

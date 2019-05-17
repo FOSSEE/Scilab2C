@@ -34,7 +34,7 @@ Syntax :-
 
 void dhouseholdera(int ninp,double *inp1,int row,double *inp2,double *out1){
 
-	int i,j;
+	int i;
 	double *x;
 	x = (double *)malloc(row*sizeof(double));
 	

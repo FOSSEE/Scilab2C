@@ -11,6 +11,7 @@
 #include "correl.h"
 #include "matrix.h"
 #include "mean.h"
+#include "matrixMultiplication.h"
 
 double dcovars (double* inp1, int sr1, int sc1, double* inp2, int sr2, int sc2, double* fre, int sr3, int sc3)
 {

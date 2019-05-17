@@ -16,7 +16,7 @@
 
 void dinterp13a(double *x,int size1,double *fx,int size2,double *q,int size3,char *ch,int size4,double *out)
 {
-	int i,j,k,f;
+	int i,j,f;
 	double a,b;
 	if(strcmp(ch,"linear")==0)
 	{

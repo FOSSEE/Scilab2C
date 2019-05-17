@@ -19,7 +19,7 @@
 
 int16 i16pmodulos(int16 inp1, int16 inp2)
 { 
-    if( inp1>0 && inp2>0)
+    if(inp1>=0 && inp2>0)
 
 		{
 			return inp1%inp2;
@@ -27,7 +27,7 @@ int16 i16pmodulos(int16 inp1, int16 inp2)
          	}
 
 
-    if( inp1>0 && inp2<0)
+    else if(inp1>=0 && inp2<0)
 
 		{
 
@@ -36,20 +36,24 @@ int16 i16pmodulos(int16 inp1, int16 inp2)
 		}
 
 
-    if(inp1<0 && inp2>0)
+    else if(inp1<0 && inp2>0)
 
     		{
 
-			return ((inp1%inp2)+(inp2));
+			return inp1%inp2+inp2;
 
 	
 		}
 
-    if(inp1<0 && inp2<0)
+    else if(inp1<0 && inp2<0)
 		{
 
-			return ((inp1%inp2)-(inp2));
+			return inp1%inp2-inp2;
 
 		}
 
+    else
+    {
+        return inp1%inp2;
+    }
 }

@@ -22,13 +22,12 @@
 
 void cidcta(floatComplex *in,int row,int col,floatComplex *out)
 {
-	int i,j,k,u,v;
+	int i,j,u,v;
 	int n=col;
 	int x,y;
-	float res,ress,vv,ff;
-	float re,z,q,m;
-	floatComplex accu = FloatComplex(0, 0);
-	floatComplex temp,mm,aa,bb;
+	float res,ress,vv;
+	float z,q;
+	floatComplex temp,mm,aa;
 	if(row==1)
 	{
 		res=1./sqrt(n);
@@ -72,7 +71,6 @@ void cidcta(floatComplex *in,int row,int col,floatComplex *out)
 				out[x]=FloatComplex(0,0);
 				for(i=0;i<row;i++)
 				{
-					re=0;
 					mm=FloatComplex(0,0);
 					temp=FloatComplex(0,0);
 					for(j=0;j<col;j++)

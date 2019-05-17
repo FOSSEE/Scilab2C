@@ -16,11 +16,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <string.h>
 #include "svd.h"
 #include "norm.h"
 #include "eye.h"
 #include "matrixTranspose.h"
 #include "qr.h"
+#include "min.h"
 
 /* All variable names, are in consideration of scilab documentation. for reference please check the scilab code.*/
 

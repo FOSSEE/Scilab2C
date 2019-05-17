@@ -18,7 +18,7 @@ void ddec2bases(double in,int base,int n,char* out)
 {
     int quot;
 	//printf("%d\n",n);
-    int i=0,j=0,k=0,tmp,temp;
+    int i=0,j=0,tmp,temp;
     quot=(int)in;
 	//printf("%d",quot);
     while(quot!=0)

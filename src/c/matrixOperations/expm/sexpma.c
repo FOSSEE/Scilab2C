@@ -68,7 +68,7 @@ void sexpma (float* in, float* out, int _iLeadDim){
     for ( iIndex1 = 0 ; iIndex1 < iSquare ; iIndex1++ )
         pfltMatrixX[iIndex1] = pfltMatrixA[iIndex1] ;
 
-	seyea(pfltMatrixEye, _iLeadDim, _iLeadDim);
+    seyea(pfltMatrixEye, _iLeadDim, _iLeadDim);
 
 
 	/*cA = A * c*/
@@ -110,7 +110,7 @@ void sexpma (float* in, float* out, int _iLeadDim){
         pfltMatrixcX[iIndex1] = pfltMatrixX[iIndex1] * (float) dblCst ;
 
 		/*E = E + cX*/
-        sadda ( out, iSquare , pfltMatrixcX , iSquare , out ) ;
+    sadda ( out, iSquare , pfltMatrixcX , iSquare , out ) ;
 
         if(iFlag == 1) /*D = D + cX*/
 		    {

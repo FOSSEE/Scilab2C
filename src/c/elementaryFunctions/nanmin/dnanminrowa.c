@@ -17,7 +17,7 @@
 
 void dnanminrowa(double *in, int row, int col, double *out, double *p)
 {
-    double inter[row], *position;
+    double inter[row], position[2];
 
 
 

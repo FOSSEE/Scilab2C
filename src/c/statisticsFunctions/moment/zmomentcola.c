@@ -7,7 +7,7 @@
 
 void zmomentcola (doubleComplex* inp, int row, int col, double ord, doubleComplex* out)
 {
-    double vect[col];
+    doubleComplex vect[col];
     for(int i = 0; i < row ; i++)
     {
 	for(int j = 0; j < col ; j++)

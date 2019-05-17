@@ -21,10 +21,7 @@
 
 void zscalinga (doubleComplex* inp1, int row, int col, doubleComplex inp2, doubleComplex* inp3, int size3, doubleComplex* out)
 {
-    doubleComplex temp[row*col], one[col], prod[row*col], diff[row*col];
-
-    for(int i = 0; i < row*col; i++)
-	temp[i] = inp1[i];
+    doubleComplex one[col], prod[row*col], diff[row*col];
 
     zonesa(one, 1, col);
 

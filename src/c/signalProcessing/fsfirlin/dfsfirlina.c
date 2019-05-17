@@ -41,7 +41,6 @@ void dfsfirlina(double* hd,int size,double flag,double* hst)
 	double eps=pow(-1,(n-1));
 	double s1[sz+1],s2[sz+1];
 	double s[2*(sz)+1];
-	double sr[2*(sz)+1];
 	if(flag==1)
 	{
 	int j,k;

@@ -26,8 +26,7 @@ float fonebessi( float inp1, float inp2)
 
    if (inp1 < 0)
    {
-      float   dblank;
-      return( dblank );
+      return 0.0/0.0;
    }
    if (inp1 == 0)
       {

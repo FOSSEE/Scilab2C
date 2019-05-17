@@ -9,6 +9,7 @@
 #include "center.h"
 #include "doubleComplex.h"
 #include "sqrt.h"
+#include "matrixMultiplication.h"
 
 void zcentercola (doubleComplex* inp, int row, int col, doubleComplex* out)
 {

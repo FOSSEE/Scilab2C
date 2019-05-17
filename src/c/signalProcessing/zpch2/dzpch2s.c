@@ -19,7 +19,7 @@
 double dzpch2s(double N, double A, double omegar,doubleComplex* zeros,doubleComplex* poles) 
 {
 	int k,j;
-	double e,xk,realVal,gain;
+	double xk,gain;
 	doubleComplex accumulate1,accumulate2,tp1,tp2;
 	accumulate1=DoubleComplex(1,0);	
 	accumulate2=DoubleComplex(1,0);

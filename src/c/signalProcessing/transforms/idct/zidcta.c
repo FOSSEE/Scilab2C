@@ -22,13 +22,12 @@
 
 void zidcta(doubleComplex *in,int row,int col,doubleComplex *out)
 {
-	int i,j,k,u,v;
+	int i,j,u,v;
 	int n=col;
 	int x,y;
-	double res,ress,vv,ff;
-	double re,z,q,m;
-	doubleComplex accu = DoubleComplex(0, 0);
-	doubleComplex temp,mm,aa,bb;
+	double res,ress,vv;
+	double z,q;
+	doubleComplex temp,mm,aa;
 	if(row==1)
 	{
 		res=1./sqrt(n);
@@ -72,7 +71,6 @@ void zidcta(doubleComplex *in,int row,int col,doubleComplex *out)
 				out[x]=DoubleComplex(0,0);
 				for(i=0;i<row;i++)
 				{
-					re=0;
 					mm=DoubleComplex(0,0);
 					temp=DoubleComplex(0,0);
 					for(j=0;j<col;j++)

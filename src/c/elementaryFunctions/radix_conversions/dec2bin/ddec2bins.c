@@ -36,7 +36,7 @@ void ddec2bins(double in,int n,double* out)
 	else
 		j=n-1;
 
-		i=0;
+        i=0;
 	
 	while(i<j)
 	{

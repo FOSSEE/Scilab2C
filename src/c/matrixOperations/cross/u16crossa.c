@@ -12,9 +12,9 @@ void u16crossa (uint16* inp1, int size1_r, int size1_c, uint16* inp2, int size2_
         oup[0] = inp1[1]*inp2[2] - inp1[2]*inp2[1];
         oup[1] = inp1[2]*inp2[0] - inp1[0]*inp2[2];
         oup[2] = inp1[0]*inp2[1] - inp1[1]*inp2[0];
-        printf("%lf ", oup[0]);
-        printf("%lf ", oup[1]);
-        printf("%lf \n", oup[2]);
+        printf("%u ", oup[0]);
+        printf("%u ", oup[1]);
+        printf("%u \n", oup[2]);
     }
     else					// Calculating the cross product for a 3XN Matrix
     {

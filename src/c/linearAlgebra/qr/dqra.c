@@ -19,6 +19,8 @@
 #include "lapack.h"
 #include "string.h"
 #include "matrixTranspose.h"
+#include "max.h"
+#include "min.h"
 
 /*For reference check Scilab source code & lapack library websites 
 Names of variable are almost same for convience.
@@ -153,8 +155,6 @@ double dqra(int ninp,int nout,double *inp1,int M,int N,double tol,double *out1,d
 			[Q,R]=qr(A)
 		    [Q,R,E]=qr(A)
 		*/
-		int LDA = M;
-	
 		double *TAU;
 		TAU = (double *)malloc(min(M,N)*sizeof(double));
 

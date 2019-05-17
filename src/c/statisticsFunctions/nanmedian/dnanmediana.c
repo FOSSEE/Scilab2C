@@ -40,12 +40,10 @@ double a= 0.0/0.0;
 
 		}
 
+if(j==0)
+    return a;
 
 out= dmediana(temp, j);
-
-if(j=0)
-return a;
-else
 return out;
 	
 }

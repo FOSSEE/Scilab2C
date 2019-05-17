@@ -13,10 +13,11 @@
 #include "matrix.h"
 #include "mean.h"
 #include "doubleComplex.h"
+#include "matrixMultiplication.h"
 
 doubleComplex zcorrelfres (doubleComplex* inp1, int sr1, int sc1, doubleComplex* inp2, int sr2, int sc2, doubleComplex* inp3, int sr3, int sc3)
 {
-    doubleComplex p1[sr3], p2[sc3], m1 = 0, m2 = 0,  s1 = 0, s2 = 0, s3 = 0, diff1[sr1*sc1], diff2[sr2*sc2], sum = 0, prod[sr3];
+    doubleComplex p1[sr3], p2[sc3], m1 = 0, m2 = 0,  s1 = 0, s2 = 0, s3 = 0, diff1[sr1*sc1], diff2[sr2*sc2], prod[sr3];
 
     doubleComplex fr[sr3*sc3];
 

@@ -17,7 +17,7 @@
 void ddec2hexs(double in,char* out)
 {
     int quot;
-    int i=0,j=0,k=0,tmp,temp;
+    int i=0,j=0,tmp,temp;
     quot=(int)in;
     while(quot!=0)
     {

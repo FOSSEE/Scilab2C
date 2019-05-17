@@ -11,6 +11,7 @@
 #include "correl.h"
 #include "matrix.h"
 #include "mean.h"
+#include "matrixMultiplication.h"
 
 float scovars (float* inp1, int sr1, int sc1, float* inp2, int sr2, int sc2, float* fre, int sr3, int sc3)
 {

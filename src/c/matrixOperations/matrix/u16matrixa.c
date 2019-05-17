@@ -12,6 +12,7 @@
  
 /*Function returns cumulative sum of members of array/matrix*/
 
+#include <stdio.h>
 #include "matrix.h"
 #include "types.h"
 #include "uint16.h"

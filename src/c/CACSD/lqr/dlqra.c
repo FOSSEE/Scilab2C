@@ -38,7 +38,6 @@ void dlqra(double* sys, int sys_rows, int sys_cols, double* Q, double* R, \
     double *BRi, *StRi, *S_t;
     double *buf1, *buf2, *buf3, *buf4, *buf5, *buf6;
     
-    int ks;
     double *wsmall, *X12, *phi12;
 
     A = (double*) malloc (no_of_states*no_of_states*sizeof(double));
@@ -196,7 +195,7 @@ void dlqra(double* sys, int sys_rows, int sys_cols, double* Q, double* R, \
 
         /*Find schur decomposition of LA*/
         wsmall = (double*) malloc(4*no_of_states*no_of_states*sizeof(double));
-        ks = (int)dschura(LA,2*no_of_states,1,2,wsmall,NULL);
+        dschura(LA,2*no_of_states,1,2,wsmall,NULL);
 
         X12 = (double*) malloc(no_of_states*no_of_states*sizeof(double));
         phi12 = (double*) malloc(no_of_states*no_of_states*sizeof(double));
@@ -295,7 +294,7 @@ void dlqra(double* sys, int sys_rows, int sys_cols, double* Q, double* R, \
 
         /*Find schur decomposition of LA*/
         wsmall = (double*) malloc(4*no_of_states*no_of_states*sizeof(double));
-        ks = (int)dgschura(LA,2*no_of_states,LE,2,2,wsmall,NULL,NULL,NULL);
+        dgschura(LA,2*no_of_states,LE,2,2,wsmall,NULL,NULL,NULL);
 
         X12 = (double*) malloc(no_of_states*no_of_states*sizeof(double));
         phi12 = (double*) malloc(no_of_states*no_of_states*sizeof(double));

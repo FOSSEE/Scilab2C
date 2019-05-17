@@ -15,9 +15,9 @@ void zcrossa (doubleComplex* inp1, int size1_r, int size1_c, doubleComplex* inp2
         oup[0] = inp1[1]*inp2[2] - inp1[2]*inp2[1];
         oup[1] = inp1[2]*inp2[0] - inp1[0]*inp2[2];
         oup[2] = inp1[0]*inp2[1] - inp1[1]*inp2[0];
-        printf("%lf ", oup[0]);
-        printf("%lf ", oup[1]);
-        printf("%lf \n", oup[2]);
+        printf("%lf %lf ", creal(oup[0]), cimag(oup[0]));
+        printf("%lf %lf ", creal(oup[1]), cimag(oup[1]));
+        printf("%lf %lf \n", creal(oup[2]), cimag(oup[2]));
     }
     else					// Calculating the cross product for a 3XN Matrix
     {

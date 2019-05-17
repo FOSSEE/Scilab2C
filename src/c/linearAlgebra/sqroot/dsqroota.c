@@ -19,6 +19,7 @@
 #include "matrixTranspose.h"
 #include "svd.h"
 #include "matrixMultiplication.h"
+#include "min.h"
 
 #define eps 2.22044604925e-16
 
@@ -33,14 +34,11 @@ void dsqroota(double *inp,int row,int col, double *out){
 	}
 	int i,j;
 	double *U,*S,*V;
-	double *A,*B;
 	int rk;
 	
 	U = (double *)malloc((double)row*row*sizeof(double));
-	S = (double *)malloc((double)Min(row,col)*Min(row,col)*sizeof(double));		
+	S = (double *)malloc((double)min(row,col)*min(row,col)*sizeof(double));
 	V = (double *)malloc((double)col*col*sizeof(double));
-	A = (double *)malloc(rk*rk*sizeof(double));
-	B = (double *)malloc(rk*row*sizeof(double));
 	
 	double *Q1;	
 	Q1 = (double *)malloc(row*col*sizeof(double));	
@@ -88,6 +86,10 @@ void dsqroota(double *inp,int row,int col, double *out){
 	}
 	else{		
 		rk = dsvda(0,inp,row,col,0,4,U,S,V);
+
+                double *A,*B;
+                A = (double *)malloc(rk*rk*sizeof(double));
+                B = (double *)malloc(rk*row*sizeof(double));
 		
 		/*Will be used in complex numbers*/		
 		//C = (double *)malloc(rk*row*sizeof(double));

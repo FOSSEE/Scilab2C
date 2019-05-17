@@ -15,7 +15,6 @@
 
 void scotha(float* in,int size,float* out)
 {
-   	float val;
    	int i=0;
    	for(i=0;i<size;i++)
 	{

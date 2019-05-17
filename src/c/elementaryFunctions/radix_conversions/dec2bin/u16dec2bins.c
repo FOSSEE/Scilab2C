@@ -30,7 +30,7 @@ void u16dec2bins(uint16 in,int n,uint16* out)
 		j=i-1;
 	else
 		j=n-1;
-		i=0;
+        i=0;
 	
 	while(i<j)
 	{

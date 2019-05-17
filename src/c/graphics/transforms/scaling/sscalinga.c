@@ -17,10 +17,7 @@
 
 void sscalinga (float* inp1, int row, int col, double inp2, float* inp3, int size3, float* out)
 {
-    float temp[row*col], one[col], prod[row*col], diff[row*col];
-
-    for(int i = 0; i < row*col; i++)
-	temp[i] = inp1[i];
+    float one[col], prod[row*col], diff[row*col];
 
     sonesa(one, 1, col);
 

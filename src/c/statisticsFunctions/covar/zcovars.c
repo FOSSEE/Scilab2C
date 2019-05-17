@@ -12,6 +12,7 @@
 #include "matrix.h"
 #include "mean.h"
 #include "doubleComplex.h"
+#include "matrixMultiplication.h"
 
 doubleComplex zcovars (doubleComplex* inp1, int sr1, int sc1, doubleComplex* inp2, int sr2, int sc2, doubleComplex* fre, int sr3, int sc3)
 {

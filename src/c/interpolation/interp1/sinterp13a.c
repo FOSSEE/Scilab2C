@@ -16,7 +16,7 @@
 
 void sinterp13a(float *x,int size1,float *fx,int size2,float *q,int size3,char *ch,int size4,float *out)
 {
-	int i,j,k,f;
+	int i,j,f;
 	float a,b;
 	if(strcmp(ch,"linear")==0)
 	{

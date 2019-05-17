@@ -17,7 +17,7 @@
 
 void ddcta(double *in,int row,int col,int sign,double *out)
 {
-	int i,j,k,u,v;
+	int i,j,u,v;
 	int n;
 	int x,y;
 	double res,ress;

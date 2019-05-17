@@ -12,7 +12,7 @@
 
 void zcentera (doubleComplex* inp, int row, int col, doubleComplex* out)
 {
-    doubleComplex sum = 0, xbar = 0, sigma = 0;
+    doubleComplex sum = 0, xbar = 0;
     for(int i = 0; i < row*col; i++)		// Findinag the maen of all the elements of the matrix
         sum = zadds(sum,inp[i]);
     xbar = zrdivs(sum,(row*col));

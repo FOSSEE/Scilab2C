@@ -15,9 +15,9 @@ void ccrossa (floatComplex* inp1, int size1_r, int size1_c, floatComplex* inp2, 
         oup[0] = inp1[1]*inp2[2] - inp1[2]*inp2[1];
         oup[1] = inp1[2]*inp2[0] - inp1[0]*inp2[2];
         oup[2] = inp1[0]*inp2[1] - inp1[1]*inp2[0];
-        printf("%lf ", oup[0]);
-        printf("%lf ", oup[1]);
-        printf("%lf \n", oup[2]);
+        printf("%f %f ", crealf(oup[0]), cimagf(oup[0]));
+        printf("%f %f ", crealf(oup[1]), cimagf(oup[1]));
+        printf("%f %f \n", crealf(oup[2]), cimagf(oup[2]));
     }
     else					// Calculating the cross product for a 3XN Matrix
     {

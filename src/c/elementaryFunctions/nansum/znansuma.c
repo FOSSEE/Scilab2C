@@ -15,6 +15,7 @@
 #include "types.h"
 #include "doubleComplex.h"
 #include "addition.h"
+#include "isnan.h"
 
 doubleComplex znansuma(doubleComplex *in, int size)
 {

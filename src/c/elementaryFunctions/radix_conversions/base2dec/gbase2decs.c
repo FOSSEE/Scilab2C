@@ -17,7 +17,7 @@
 double gbase2decs(char* in,int size,int base)
 {
 	size-=2;
-	int i=0,val=0,j=0;
+	int i=0,val=0;
 	double o=0.0;
 	for(i=0; in[i]!='\0'; i++)
     	{

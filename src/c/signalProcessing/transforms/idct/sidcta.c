@@ -17,7 +17,7 @@
 
 void sidcta(float *in,int row,int col,float *out)
 {
-	int i,j,k,u,v;
+	int i,j,u,v;
 	int n=col;
 	int x,y;
 	float res,ress;

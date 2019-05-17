@@ -8,7 +8,7 @@
 
 void scentera (float* inp, int row, int col, float* out)
 {
-    float sum = 0, xbar = 0, sigma = 0;
+    float sum = 0, xbar = 0;
     for(int i = 0; i < row*col; i++)		// Findinag the maen of all the elements of the matrix
         sum += inp[i];
     xbar = sum/(row*col);

@@ -19,7 +19,7 @@
 
 void zgsorta(doubleComplex *in, int size, char check, doubleComplex* out)
 {
-    doubleComplex a; doubleComplex fin; doubleComplex in_copy[size];
+    doubleComplex a; doubleComplex in_copy[size];
 
    for(int i=0; i< size; i++)
 

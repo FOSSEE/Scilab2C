@@ -17,7 +17,7 @@ void dcheb2mags(double n,double omegar, double A, double* sample,int size,double
 	double e;
 	//e=sqrt(A*A-1);
 	e=1/(pow(10,A/10)-1);
-	double x,k,cn,h,tp;
+	double x,cn,h,tp;
 	int i;
 	for(i=0;i<size;i++)
 	{

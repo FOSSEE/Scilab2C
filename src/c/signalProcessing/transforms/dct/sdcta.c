@@ -17,7 +17,7 @@
 
 void sdcta(float *in,int row,int col,int sign,float *out)
 {
-	int i,j,k,u,v;
+	int i,j,u,v;
 	int n;
 	int x,y;
 	float res,ress;

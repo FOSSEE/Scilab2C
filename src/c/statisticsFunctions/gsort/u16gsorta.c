@@ -17,7 +17,7 @@
 
 void u16gsorta(uint16 *in, int size, char check, uint16* out)
 {
-    uint16 a; uint16 fin; uint16 in_copy[size];
+    uint16 a; uint16 in_copy[size];
 
    for(int i=0; i< size; i++)
 

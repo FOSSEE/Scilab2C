@@ -135,8 +135,7 @@ double bessy( int n, double x )
 
    if (n < 0 || x == 0.0)
    {
-      double   dblank;
-      return( dblank );
+      return 0.0/0.0;
    }
    if (n == 0)
       return( bessy0(x) );

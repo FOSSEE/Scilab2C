@@ -17,7 +17,7 @@
 
 void didcta(double *in,int row,int col,double *out)
 {
-	int i,j,k,u,v;
+	int i,j,u,v;
 	int n=col;
 	int x,y;
 	double res,ress;

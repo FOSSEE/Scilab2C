@@ -41,9 +41,9 @@ void dmodka(double* inp,int size,double* oup)
 	{
 	ones[i]=1;
 	}
-	double a[size],b[size],c[size],an[size],bn[size],cn[size],kans[size];
+	double a[size],b[size],c[size],an[size],bn[size],cn[size];
 	
-	int j,kk,l,m;
+	int j,kk,l;
 	for(j=0;j<size;j++)
 	{
 	a[j]=1;
@@ -57,7 +57,6 @@ void dmodka(double* inp,int size,double* oup)
 	c[l]=sqrt(inp[l]);
 	
 	}
-	int x=0;	
 	
 	while(max_calc(c,size)>eps)
 	{
@@ -88,7 +87,7 @@ void dmodka(double* inp,int size,double* oup)
 		c[z]=cn[z];
 		}
 	}
-	int q,w;
+	int q;
 	for(q=0;q<size;q++)
 	{
 	oup[q]=PI*(ones[q]/(2*a[q]));

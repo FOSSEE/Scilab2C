@@ -17,7 +17,7 @@
 void u8dec2hexs(uint8 in,char* out)
 {
     int quot;
-    int i=0,j=0,k=0,tmp,temp;
+    int i=0,j=0,tmp,temp;
     quot=(int)in;
     while(quot!=0)
     {
@@ -44,6 +44,5 @@ void u8dec2hexs(uint8 in,char* out)
 		i++;
 		j--;
 	}
-	out[i+1]='  ';
     
 }

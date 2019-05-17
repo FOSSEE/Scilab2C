@@ -26,8 +26,7 @@ double onebessi( double inp1, double inp2)
 
    if (inp1 < 0)
    {
-      double   dblank;
-      return( dblank );
+      return 0.0/0.0;
    }
    if (inp1 == 0)
       {

@@ -39,7 +39,6 @@ void dfilt_sincs(double N,double fc,double* oup)
 	xn[(int)no2]=2*fc;
 	xd[(int)no2]=1;
 	}
-	double x[sz];
 	int k;
 	for(k=0;k<N;k++)
 	{

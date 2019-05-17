@@ -17,10 +17,7 @@
 
 void dscalinga (double* inp1, int row, int col, double inp2, double* inp3, int size3, double* out)
 {
-    double temp[row*col], one[col], prod[row*col], diff[row*col];
-
-    for(int i = 0; i < row*col; i++)
-	temp[i] = inp1[i];
+    double one[col], prod[row*col], diff[row*col];
 
     donesa(one, 1, col);
 

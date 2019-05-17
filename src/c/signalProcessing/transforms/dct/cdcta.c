@@ -22,13 +22,12 @@
 
 void cdcta(floatComplex *in,int row,int col,int sign,floatComplex *out)
 {
-	int i,j,k,u,v;
+	int i,j,u,v;
 	int n;
 	int x,y;
 	float res,ress,vv,ff;
-	float re,z,q,m;
-	floatComplex accu = FloatComplex(0, 0);
-	floatComplex temp,mm,aa,bb,cc;
+	float z,q;
+	floatComplex temp,mm,aa,bb;
 	if(sign==-1)
 	{
 		if(row==1)
@@ -183,7 +182,6 @@ void cdcta(floatComplex *in,int row,int col,int sign,floatComplex *out)
 					out[x]=FloatComplex(0,0);
 					for(i=0;i<row;i++)
 					{
-						re=0;
 						mm=FloatComplex(0,0);
 						temp=FloatComplex(0,0);
 						for(j=0;j<col;j++)

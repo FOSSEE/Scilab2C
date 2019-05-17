@@ -28,7 +28,8 @@ double derfinvs (double inp1)
     {
 	return 0.0/0.0;				// returns Nan
     }    
-    if ((inp1 >= -0.7) && (inp1 <= 0.7))
+
+    else if ((inp1 >= -0.7) && (inp1 <= 0.7))
     {
         double sq = inp1 * inp1;
         return (inp1 * (((a[3]*sq+a[2]) * sq+a[1]) * sq+a[0]) /  ((((b[3]*sq+b[2]) * sq+b[1]) * sq+b[0]) * sq+1));	//Inverse error formula
@@ -44,6 +45,11 @@ double derfinvs (double inp1)
     {
         double z = sqrt(-log((1+inp1)/2));
         return (-(((c[3]*z+c[2]) * z+c[1]) * z+c[0]) / ((d[1]*z+d[0]) * z+1));		//Inverse error formula
+    }
+
+    else
+    {
+	return 0.0/0.0;				// returns Nan
     }
 }
 

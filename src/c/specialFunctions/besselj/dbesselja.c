@@ -81,9 +81,7 @@ double bessj( int n, double x )
 
    if (n < 0)
    {
-      double   dblank;
-      //setdblack_c( &dblank );
-      return( dblank );
+      return 0.0/0.0;
    }
    ax=fabs(x);
    if (n == 0)

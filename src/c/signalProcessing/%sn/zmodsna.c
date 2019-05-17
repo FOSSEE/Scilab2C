@@ -16,9 +16,8 @@
 #define CA 0.0003
 
 
-doubleComplex zmodsnsproto(doubleComplex uu,double emmc,doubleComplex* sni)
+void zmodsnsproto(doubleComplex uu,double emmc,doubleComplex* sni)
 {
-	doubleComplex ans;
 	double uur,uui;
 	uur=zreals(uu);
 	uui=zimags(uu);

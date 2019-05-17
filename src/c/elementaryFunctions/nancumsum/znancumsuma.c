@@ -16,6 +16,7 @@
 #include "uint16.h"
 #include "doubleComplex.h"
 #include "addition.h"
+#include "isnan.h"
 
 void znancumsuma(doubleComplex *in, int size, doubleComplex* out)
 {

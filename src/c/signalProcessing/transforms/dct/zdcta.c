@@ -22,13 +22,12 @@
 
 void zdcta(doubleComplex *in,int row,int col,int sign,doubleComplex *out)
 {
-	int i,j,k,u,v;
+	int i,j,u,v;
 	int n;
 	int x,y;
 	double  res,ress,vv,ff;
-	double  re,z,q,m;
-	doubleComplex accu = DoubleComplex(0, 0);
-	doubleComplex temp,mm,aa,bb,cc;
+	double  z,q;
+	doubleComplex temp,mm,aa,bb;
 	if(sign==-1)
 	{
 		if(row==1)
@@ -183,7 +182,6 @@ void zdcta(doubleComplex *in,int row,int col,int sign,doubleComplex *out)
 					out[x]=DoubleComplex(0,0);
 					for(i=0;i<row;i++)
 					{
-						re=0;
 						mm=DoubleComplex(0,0);
 						temp=DoubleComplex(0,0);
 						for(j=0;j<col;j++)

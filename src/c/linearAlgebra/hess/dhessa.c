@@ -27,7 +27,7 @@ extern int dorghr_(int *, int *,int *,double *,int *,double *,double *,int *,int
 /* All the vairbale names are given exactly the same name as scilab source code */
 void dhessa(double *in1,int size,int nout,double *out1, double *out2){
 /* Variables names are done through, Lapack library. */
-	int i,j,k;	
+	int i,j;
 	int N = size;
 	int ILO=1;
 	int IHI=N;

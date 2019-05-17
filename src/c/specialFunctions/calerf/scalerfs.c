@@ -25,5 +25,6 @@ float scalerfs (float inp1, double inp2)
 	return derfcs(inp1);
     if (inp2 == 2)
 	return derfcxs(inp1);
+    return 0.0/0.0;
 }
 

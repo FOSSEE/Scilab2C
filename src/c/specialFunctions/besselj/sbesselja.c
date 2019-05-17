@@ -81,8 +81,7 @@ float fbessj( int n, float x )
 
    if (n < 0)
    {
-      float   dblank;
-      return( dblank );
+      return 0.0/0.0;
    }
    ax=fabs(x);
    if (n == 0)

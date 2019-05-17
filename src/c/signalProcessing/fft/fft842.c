@@ -29,7 +29,6 @@ static int fastlog2( int n)
 
 void fft842 (doubleComplex* b, int size , int in)
 {
-  double fn;
   doubleComplex temp ;
 
   int L[16],L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11,L12,L13,L14,L15;
@@ -39,7 +38,6 @@ void fft842 (doubleComplex* b, int size , int in)
 
   n2pow = fastlog2( size );
   nthpo = size ;
-  fn = 1.0 / (double)nthpo;
 
 
   if(in==FORWARD)

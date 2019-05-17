@@ -20,6 +20,7 @@
 #include "svd.h"
 #include "doubleComplex.h"
 #include "addition.h"
+#include "max.h"
 
 #define eps 2.22044604925e-16 
 

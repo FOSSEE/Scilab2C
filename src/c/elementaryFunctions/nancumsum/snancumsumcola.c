@@ -15,6 +15,7 @@
 #include "types.h"
 #include "uint16.h"
 #include "addition.h"
+#include "isnan.h"
 
 void snancumsumcola(float *in, int row, int col, float* out)
 { 

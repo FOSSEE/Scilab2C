@@ -30,7 +30,7 @@ void u8dec2bins(uint8 in,int n,uint8* out)
 		j=i-1;
 	else
 		j=n-1;
-		i=0;
+        i=0;
 	
 	while(i<j)
 	{

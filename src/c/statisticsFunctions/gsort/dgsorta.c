@@ -17,7 +17,7 @@
 
 void dgsorta(double *in, int size, char check, double* out)
 {
-    double a; double fin; double in_copy[size];
+    double a; double in_copy[size];
 
    for(int i=0; i< size; i++)
 

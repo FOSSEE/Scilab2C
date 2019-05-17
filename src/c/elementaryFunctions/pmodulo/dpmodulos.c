@@ -18,7 +18,7 @@
 
 double dpmodulos(double inp1, double inp2)
 { 
-    if( inp1>0 && inp2>0)
+    if(inp1>=0 && inp2>0)
 
 		{
 			return fmod(inp1,inp2);
@@ -26,7 +26,7 @@ double dpmodulos(double inp1, double inp2)
          	}
 
 
-    if( inp1>0 && inp2<0)
+    else if(inp1>=0 && inp2<0)
 
 		{
 
@@ -35,20 +35,24 @@ double dpmodulos(double inp1, double inp2)
 		}
 
 
-    if(inp1<0 && inp2>0)
+    else if(inp1<0 && inp2>0)
 
     		{
 
-			return ((fmod(inp1,inp2))+(inp2));
+			return fmod(inp1,inp2)+inp2;
 
 	
 		}
 
-    if(inp1<0 && inp2<0)
+    else if(inp1<0 && inp2<0)
 		{
 
-			return ((fmod(inp1,inp2))-(inp2));
+			return fmod(inp1,inp2)-inp2;
 
 		}
 
+    else
+    {
+        return fmod(inp1,inp2);
+    }
 }

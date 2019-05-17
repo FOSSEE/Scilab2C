@@ -69,7 +69,7 @@ void cexpma(floatComplex * in, floatComplex * out, int _iLeadDim)
         pfltMatrixX[iIndex1] = pfltMatrixA[iIndex1] ;
 
 
-	ceyea(pfltMatrixEye, _iLeadDim, _iLeadDim);
+    ceyea(pfltMatrixEye, _iLeadDim, _iLeadDim);
 
     /*cmulma ( & cfltCst , 1 ,1,
          pfltMatrixA , _iLeadDim, _iLeadDim,

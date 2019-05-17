@@ -67,7 +67,7 @@ void dexpma (double* in, double* out, int _iLeadDim){
     for ( iIndex1 = 0 ; iIndex1 < iSquare ; iIndex1++ )
         pdblMatrixX[iIndex1] = pdblMatrixA[iIndex1] ;
 
-	deyea(pdblMatrixEye, _iLeadDim, _iLeadDim);
+    deyea(pdblMatrixEye, _iLeadDim, _iLeadDim);
 
 
 	/*cA = A * c*/
@@ -106,7 +106,7 @@ void dexpma (double* in, double* out, int _iLeadDim){
         pdblMatrixcX[iIndex1] = pdblMatrixX[iIndex1] * dblCst ;
 
 		/*E = E + cX*/
-        dadda ( out, iSquare , pdblMatrixcX , iSquare , out ) ;
+    dadda ( out, iSquare , pdblMatrixcX , iSquare , out ) ;
 
         if(iFlag == 1) /*D = D + cX*/
 		    {

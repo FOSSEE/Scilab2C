@@ -109,8 +109,7 @@ float fbessk( int n, float x )
 
    if (n < 0 || x == 0.0)
    {
-      float   dblank;
-      return( dblank );
+      return 0.0/0.0;
    }
    if (n == 0)
       return( fbessk0(x) );

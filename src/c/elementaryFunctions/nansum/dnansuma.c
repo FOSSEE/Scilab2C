@@ -15,6 +15,7 @@
 #include "types.h"
 #include "uint16.h"
 #include "addition.h"
+#include "isnan.h"
 
 double dnansuma(double *in, int size)
 {

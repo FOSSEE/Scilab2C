@@ -19,6 +19,7 @@
 	givens(x,y)=givens([x;y])
 */
 
+#include <stdlib.h>
 #include "givens.h"
 #include <stdio.h>
 #include <math.h>

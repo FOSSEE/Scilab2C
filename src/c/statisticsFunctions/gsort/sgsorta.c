@@ -17,7 +17,7 @@
 
 void sgsorta(float *in, int size, char check, float* out)
 {
-    float a; float fin; float in_copy[size];
+    float a; float in_copy[size];
 
    for(int i=0; i< size; i++)
 
